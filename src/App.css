@@ -1,0 +1,295 @@
+a {
+    width: 100%;
+}
+.App {
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.SBCon {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.SBar {
+    width: 70%;
+    height: 100%;
+    background-color: #15082f;
+    color: #fff;
+    padding-left: 5px;
+    font-size: 1.2rem;
+}
+.SButton {
+    background-color: #23a7f2;
+    height: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 15%;
+    box-shadow: 3px 3px 0px 0px rgb(0, 125, 198);
+    color: white;
+    font-size: 1.2rem;
+}
+.validate {
+    color: red;
+}
+.PIBlock {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 20px;
+    background-color: #15082f;
+    border: 2px solid transparent;
+    border-image-slice: 1;
+    border-radius: 20px;
+}
+.Useravatar {
+    max-width: 4.5rem;
+    max-height: 4.5rem;
+    border-radius: 200px;
+    object-fit: cover;
+    filter: drop-shadow(0px 0px 5px #23a7f2);
+}
+.MainDetails {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.Uname {
+    color: white;
+    font-size: 1.6rem;
+    margin: 0px;
+}
+.Locc {
+    color: rgb(185, 185, 185);
+    font-size: 1.2rem;
+    margin: 0px;
+}
+.Details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.UnameIcon {
+    filter: invert(80%);
+    width: 1.6rem;
+    height: auto;
+}
+.LoccIcon {
+    filter: invert(80%);
+    width: 1.3rem;
+    height: auto;
+}
+.UnameCon {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+}
+.Biotext {
+    color: white;
+    font-size: 1.3rem;
+    margin: 0px;
+}
+.Numscon {
+    width: 90%;
+    height: 10%;
+    background-color: #15082f;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Followcon {
+    width: 30%;
+    border: 2px solid transparent;
+    border-image-slice: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.Followcount {
+    font-size: 2.5rem;
+    color: white;
+    margin: 0px;
+}
+.Followlabel {
+    font-size: 0.9rem;
+    color: white;
+    margin: 0px;
+}
+.SR {
+    font-size: 1.2rem;
+    color: white;
+    margin: 0px;
+    text-align: left;
+    margin-top: 10px;
+}
+.Extrainfocon {
+    width: 80%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #15082f;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid transparent;
+    border-image-slice: 1;
+}
+.Extraicon {
+    width: 1.2rem;
+    height: fit-content;
+    filter: invert(70%);
+}
+
+.Extracon {
+    display: flex;
+    gap: 20px;
+    color: rgb(218, 218, 218);
+    flex-direction: row;
+}
+.Extratext {
+    margin: 0px;
+    font-size: 1rem;
+}
+.Gotoprofile {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    font-size: 1.2rem;
+    background-color: #23a7f2;
+    box-shadow: 2px 2px 0px rgb(0, 125, 198);
+    color: white;
+    margin-bottom: 15px;
+    border-radius: 0px 0px 10px 10px;
+}
+.RepsStarcon {
+    width: 90%;
+}
+.RSBtns {
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    background-color: #15082f;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.RSBtnclass {
+    min-width: 50%;
+    padding: 15px;
+    border: 1px solid rgb(0, 125, 198);
+    font-size: 1.3rem;
+    background-color: #15082f;
+    color: #23a7f2;
+    transition-duration: 200ms;
+}
+.RSBtnclass:hover {
+    background-color: #23a7f2;
+    color: white;
+    transition-duration: 200ms;
+}
+.Repolist {
+    margin-top: 10px;
+    max-width: 100%;
+    border: 2px solid #23a7f2;
+    border-radius: 5px;
+    padding-inline: 10px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(235, 213, 255);
+    font-size: 1.2rem;
+    text-align: left;
+    box-sizing: border-box;
+}
+.margin-none {
+    margin-bottom: 10px;
+    text-align: left;
+}
+.Repoicon {
+    width: 2rem;
+    filter: invert(70%);
+    margin-right: 20px;
+}
+.Repohead {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    z-index: -1;
+}
+.Detailrow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Detailcomponent {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #23a7f2;
+    color: rgb(209, 209, 209);
+}
+.width-full {
+    width: 95%;
+    margin: 0px;
+}
+.RepoMain {
+    width: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: left;
+}
+.Repos {
+    width: 100%;
+    margin-left: 1rem;
+}
+.Shared {
+    width: 100%;
+    margin-right: 1rem;
+}
+.RepsStar {
+    padding-bottom: 20px;
+}
+.Gotorepo {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #23a7f2;
+    box-shadow: 2px 2px 0px rgb(0, 125, 198);
+    color: white;
+    border: 0px;
+    margin-top: 10px;
+    border-radius: 0px 0px 0px 0px;
+    border-bottom: 3px solid rgb(0, 125, 198);
+}
+.downrepo {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    float: right;
+    font-size: 1.2rem;
+    background-color: #23a7f2;
+    box-shadow: 2px 2px 0px rgb(0, 125, 198);
+    color: white;
+    margin-bottom: 15px;
+    border-radius: 0px 0px 10px 10px;
+}
