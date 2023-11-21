@@ -13,9 +13,46 @@ import OfficeIcon from "./images/city.png";
 function App() {
     const [searchquery, setSearchQ] = useState("FahzainAhmad");
     const [existflag, setexistflag] = useState(true);
+    const fetchRateLimit = () => {
+        fetch(`https://api.github.com/rate_limit`, {
+            headers: {
+                Authorization: `Bearer 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`,
+            },
+        })
+            .then((response) => {
+                // Check if the response headers contain rate limit information
+                const rateLimit = response.headers.get("X-RateLimit-Limit");
+                const remainingRequests = response.headers.get(
+                    "X-RateLimit-Remaining"
+                );
+                const resetTime = response.headers.get("X-RateLimit-Reset");
+
+                console.log(
+                    `In case you wanna check the Rate limit: ${rateLimit}`
+                );
+                console.log(
+                    `In case you wanna check the Remaining Requests: ${remainingRequests}`
+                );
+                console.log(
+                    `In case you wanna check the Reset Time: ${new Date(
+                        resetTime * 1000
+                    )}`
+                );
+            })
+            .catch((error) => {
+                console.error("Error fetching rate limit:", error);
+            });
+    };
+
+    // Call the function to fetch rate limit information
+    fetchRateLimit();
 
     const AcceptSearch = (SQ) => {
-        fetch(`https://api.github.com/users/${SQ}`)
+        fetch(`https://api.github.com/users/${SQ}`, {
+            headers: {
+                Authorization: `Bearer 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`,
+            },
+        })
             .then((response) => {
                 if (response.status === 200) {
                     setSearchQ(SQ);
@@ -45,7 +82,7 @@ function App() {
 
     fetch(`https://api.github.com/users/${searchquery}`, {
         headers: {
-            Authorization: `Bearer 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`,
+            Authorization: `Bearer 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`,
         },
     })
         .then((response) => {
@@ -83,7 +120,7 @@ function App() {
         });
     fetch(`https://api.github.com/users/${searchquery}/repos`, {
         headers: {
-            Authorization: `Bearer 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`,
+            Authorization: `Bearer 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`,
         },
     })
         .then((response) => response.json())
@@ -94,7 +131,7 @@ function App() {
 
     fetch(`https://api.github.com/users/${searchquery}/starred`, {
         headers: {
-            Authorization: `Bearer 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`,
+            Authorization: `Bearer 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`,
         },
     })
         .then((response) => response.json())
