@@ -25,7 +25,9 @@ a {
     color: #fff;
     padding-left: 5px;
     font-size: 1.2rem;
+    outline: none;
 }
+
 .SButton {
     background-color: #23a7f2;
     height: 100%;

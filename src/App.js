@@ -14,11 +14,7 @@ function App() {
     const [searchquery, setSearchQ] = useState("FahzainAhmad");
     const [existflag, setexistflag] = useState(true);
     const fetchRateLimit = () => {
-        fetch(`https://api.github.com/rate_limit`, {
-            headers: {
-                Authorization: `Bearer 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`,
-            },
-        })
+        fetch(`https://api.github.com/rate_limit`)
             .then((response) => {
                 // Check if the response headers contain rate limit information
                 const rateLimit = response.headers.get("X-RateLimit-Limit");
@@ -48,11 +44,7 @@ function App() {
     fetchRateLimit();
 
     const AcceptSearch = (SQ) => {
-        fetch(`https://api.github.com/users/${SQ}`, {
-            headers: {
-                Authorization: `Bearer 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`,
-            },
-        })
+        fetch(`https://api.github.com/users/${SQ}`)
             .then((response) => {
                 if (response.status === 200) {
                     setSearchQ(SQ);
@@ -80,11 +72,7 @@ function App() {
     const [userrepos, setrepos] = useState([]);
     const [userstarredrepos, setstarredrepos] = useState([]);
 
-    fetch(`https://api.github.com/users/${searchquery}`, {
-        headers: {
-            Authorization: `Bearer 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`,
-        },
-    })
+    fetch(`https://api.github.com/users/${searchquery}`)
         .then((response) => {
             if (response.status === 404) {
                 throw new Error("User not found");
@@ -118,22 +106,14 @@ function App() {
                 console.log("API limit exceeded");
             }
         });
-    fetch(`https://api.github.com/users/${searchquery}/repos`, {
-        headers: {
-            Authorization: `Bearer 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`,
-        },
-    })
+    fetch(`https://api.github.com/users/${searchquery}/repos`)
         .then((response) => response.json())
         .then((reposData) => {
             setrepos(reposData);
         })
         .catch((error) => console.error("Error fetching repositories:", error));
 
-    fetch(`https://api.github.com/users/${searchquery}/starred`, {
-        headers: {
-            Authorization: `Bearer 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`,
-        },
-    })
+    fetch(`https://api.github.com/users/${searchquery}/starred`)
         .then((response) => response.json())
         .then((reposData) => {
             setstarredrepos(reposData);

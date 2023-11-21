@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.4add0c04.css",
-    "main.js": "/static/js/main.8f5687e2.js",
-    "static/js/787.eb7869b6.chunk.js": "/static/js/787.eb7869b6.chunk.js",
-    "static/media/marker.png": "/static/media/marker.c55232f0c665701ca9d5.png",
-    "static/media/name.png": "/static/media/name.4938c6b1533074c87bf7.png",
-    "index.html": "/index.html",
-    "main.4add0c04.css.map": "/static/css/main.4add0c04.css.map",
-    "main.8f5687e2.js.map": "/static/js/main.8f5687e2.js.map",
-    "787.eb7869b6.chunk.js.map": "/static/js/787.eb7869b6.chunk.js.map"
+    "main.css": "/github-profile-viewer-reactjs/static/css/main.4add0c04.css",
+    "main.js": "/github-profile-viewer-reactjs/static/js/main.37c22662.js",
+    "static/js/787.eb7869b6.chunk.js": "/github-profile-viewer-reactjs/static/js/787.eb7869b6.chunk.js",
+    "static/media/marker.png": "/github-profile-viewer-reactjs/static/media/marker.c55232f0c665701ca9d5.png",
+    "static/media/name.png": "/github-profile-viewer-reactjs/static/media/name.4938c6b1533074c87bf7.png",
+    "index.html": "/github-profile-viewer-reactjs/index.html",
+    "main.4add0c04.css.map": "/github-profile-viewer-reactjs/static/css/main.4add0c04.css.map",
+    "main.37c22662.js.map": "/github-profile-viewer-reactjs/static/js/main.37c22662.js.map",
+    "787.eb7869b6.chunk.js.map": "/github-profile-viewer-reactjs/static/js/787.eb7869b6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4add0c04.css",
-    "static/js/main.8f5687e2.js"
+    "static/js/main.37c22662.js"
   ]
 }
